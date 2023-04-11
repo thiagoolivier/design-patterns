@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Products\\": "src/Products",
+            "Protocols\\": "src/Protocols"
+        }
+    }
+}
