@@ -1,8 +1,9 @@
 {
     "autoload": {
         "psr-4": {
-            "Products\\": "src/Products",
-            "Protocols\\": "src/Protocols"
+            "factory_method\\factories\\": "src/creational/factory_method/factories",
+            "factory_method\\interfaces\\": "src/creational/factory_method/interfaces",
+            "factory_method\\products\\": "src/creational/factory_method/products"
         }
     }
 }
