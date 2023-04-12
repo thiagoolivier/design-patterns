@@ -1,5 +1,13 @@
 <?php
 
+use iterator\collections\InvoiceCollection;
+use iterator\MyIterator;
+use iterator\products\Invoice;
+
 require_once 'vendor/autoload.php';
 
-//client file used to test each design pattern.
+$invoiceCollection = new InvoiceCollection([new Invoice(15), new Invoice(25), new Invoice(50)]);
+
+$myIterator = new MyIterator((array)$invoiceCollection);
+
+var_dump($myIterator);

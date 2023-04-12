@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "factory_method\\factories\\": "src/creational/factory_method/factories",
+            "factory_method\\interfaces\\": "src/creational/factory_method/interfaces",
+            "factory_method\\products\\": "src/creational/factory_method/products",
+            "iterator\\collections\\": "src/behavioural/iterator/collections",
+            "iterator\\interfaces\\": "src/behavioural/iterator/interfaces",
+            "iterator\\products\\": "src/behavioural/iterator/products"
+        }
+    }
+}
