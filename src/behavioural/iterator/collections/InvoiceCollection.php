@@ -6,8 +6,16 @@ class InvoiceCollection
 {
     public array $invoices;
 
-    public function __construct(array $invoice)
-    {
+    public function addItem(array $invoice) {
         $this->invoices[] = $invoice; 
     }
+
+    public function getItems() {
+        return $this->invoices;
+    }
+
+    public function getSize() {
+        return sizeof($this->invoices);
+    }
+
 }
