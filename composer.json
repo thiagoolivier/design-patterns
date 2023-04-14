@@ -2,6 +2,7 @@
     "autoload": {
         "psr-4": {
             "factory_method\\": "src/creational/factory_method",
+            "abstract_factory\\": "src/creational/abstract_factory",
             "iterator\\": "src/behavioural/iterator"
         }
     }
