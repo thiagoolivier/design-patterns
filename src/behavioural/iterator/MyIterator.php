@@ -2,50 +2,45 @@
 
 namespace iterator;
 
-use iterator\collections\InvoiceCollection;
-use iterator\interfaces\MyIteratorProtocol;
+use Iterator;
 
-class MyIterator implements MyIteratorProtocol
+class MyIterator implements Iterator
 {
 
-    private array $collections;
+    private $collection;
 
-    public function __construct(array $collection)
+    public function __construct($collection)
     {
-        $this->collections[] = $collection;
-    }
-
-    public function reset(): void
-    {
-        reset($this->collections);
+        $this->collection = array();
+        array_push($this->collection, $collection);
     }
 
     public function rewind(): void
     {
-        reset($this->collections);
+        reset($this->collection);
     }
 
     public function valid(): bool
     {
-        return current($this->collections) !== false;
+        return current($this->collection) !== false;
     }
 
     public function key()
     {
-        return key($this->collections);
+        return key($this->collection);
     }
 
     public function current()
     {
-
-        return current($this->collections);
-
+        return current($this->collection);
     }
 
     public function next(): void
     {
+        next($this->collection);
+    }
 
-        next($this->collections);
-
+    public function getCollection() {
+        return $this->collection;
     }
 }
