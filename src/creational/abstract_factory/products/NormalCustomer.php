@@ -8,7 +8,7 @@ class NormalCustomer implements Customer {
 
     private string $name;
 
-    public function __construct($customerName) {
+    public function __construct(string $customerName) {
         $this->name = $customerName;
     }
 
